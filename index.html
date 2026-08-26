@@ -1,20 +1,164 @@
-Prakriti Bhandari
-Home Projects About Contact
-I build and deploy practical machine learning applications.
-From fraud detection to NLP tools, using Python, Scikit-learn, and TensorFlow — each one live and testable, not just a notebook.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prakriti Bhandari — AI/ML Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #3B6DFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+  }
+  nav a:hover { color: var(--accent); }
 
-See my work
-Featured Projects
-Credit Card Fraud Detection
-96% precision / 90% recall on a severely imbalanced dataset. Deployed as a live app.
+  .hero {
+    max-width: 700px;
+    margin: 100px auto 80px;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 32px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
 
-View live demo →
-MNIST Digit Classifier
-Convolutional Neural Network achieving 99.00% test accuracy on handwritten digit recognition.
+  .projects {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+  }
+  .projects h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 14px;
+  }
+  .card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
 
-View live demo →
-Email/SMS Spam Classifier
-NLP pipeline with TF-IDF, deployed with real-time predictions and confidence scores.
+  footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
 
-View live demo →
-© 2026 Prakriti Bhandari · GitHub · LinkedIn
+<header>
+  <div class="logo">Prakriti Bhandari</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>I build and deploy practical machine learning applications.</h1>
+  <p>From fraud detection to NLP tools, using Python, Scikit-learn, and TensorFlow — each one live and testable, not just a notebook.</p>
+  <a href="projects.html" class="btn">See my work</a>
+</section>
+
+<section class="projects">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Credit Card Fraud Detection</h3>
+      <p>96% precision / 90% recall on a severely imbalanced dataset. Deployed as a live app.</p>
+      <a href="https://detecting-credit-card-fraud-vgwrhrds5kvclfbghrt6gu.streamlit.app/" target="_blank">View live demo →</a>
+    </div>
+
+    <div class="card">
+      <h3>MNIST Digit Classifier</h3>
+      <p>Convolutional Neural Network achieving 99.00% test accuracy on handwritten digit recognition.</p>
+      <a href="https://mnistdigitclassification-b8z2k8m8gezfphdvbw9ycw.streamlit.app/" target="_blank">View live demo →</a>
+    </div>
+
+    <div class="card">
+      <h3>Email/SMS Spam Classifier</h3>
+      <p>NLP pipeline with TF-IDF, deployed with real-time predictions and confidence scores.</p>
+      <a href="https://sms-spam-classifier-hz3uzddeyeamfbcgmktqup.streamlit.app/" target="_blank">View live demo →</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Prakriti Bhandari · <a href="https://github.com/Prakritibhandari07" style="color:#888;">GitHub</a> · <a href="https://www.linkedin.com/in/prakriti-bhandari-18pp/" style="color:#888;">LinkedIn</a>
+</footer>
+
+</body>
+</html>
