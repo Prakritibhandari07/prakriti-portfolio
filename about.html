@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Prakriti Bhandari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #3B6DFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+  }
+  nav a:hover, nav a.active { color: var(--accent); }
+
+  .content {
+    max-width: 700px;
+    margin: 60px auto 100px;
+    padding: 0 40px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  ul {
+    margin: 0 0 16px 20px;
+    font-size: 15px;
+    color: #333;
+  }
+  li { margin-bottom: 6px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .skill-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .skill-card .label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .skill-card .value {
+    font-size: 13.5px;
+    color: #333;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+  footer a { color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Prakriti Bhandari</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h1>About</h1>
+
+  <p>I'm a Computer Science and IT student at IOST, Tribhuvan University, and a self-taught AI/ML developer. I build things end-to-end, not just training a model in a notebook, but actually shipping it as something someone else can use and test.</p>
+
+  <p>Over the past few months I've built and deployed six projects spanning classical machine learning, deep learning, NLP, and full-stack development, including wrapping one of my models in a production-style FastAPI service running in Docker. I'm currently completing a project-based Machine Learning internship at FlyRank AI, working on applied ML task framing, data contracts, and model evaluation under mentor review.</p>
+
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="label">Languages</span>
+      <span class="value">Python, C, C++, HTML, CSS, JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <span class="label">ML / Data</span>
+      <span class="value">NumPy, Pandas, Scikit-learn, TensorFlow/Keras, NLP, TF-IDF</span>
+    </div>
+    <div class="skill-card">
+      <span class="label">Deployment</span>
+      <span class="value">Django, Streamlit, FastAPI, Docker, Render, Git, GitHub</span>
+    </div>
+    <div class="skill-card">
+      <span class="label">Tools</span>
+      <span class="value">Jupyter Notebook, VS Code, Linux (basic)</span>
+    </div>
+  </div>
+
+  <h2>What I'm Currently Learning</h2>
+  <p>I'm actively closing gaps toward production ML engineering, recent focus areas include API design with FastAPI, containerization with Docker, and cloud deployment. I'm also building fluency in structured, honest model evaluation, including catching and correcting my own mistakes before reporting results.</p>
+
+  <h2>Beyond Code</h2>
+  <p>I volunteered as an Organizing Committee member for CodeFest 2026 (Provincial Phase, Bagmati), a regional coding event hosted at Himalayan WhiteHouse International College.</p>
+</section>
+
+<footer>
+  &copy; 2026 Prakriti Bhandari · <a href="https://github.com/Prakritibhandari07">GitHub</a> · <a href="https://www.linkedin.com/in/prakriti-bhandari-18pp/">LinkedIn</a>
+</footer>
+
+</body>
+</html>

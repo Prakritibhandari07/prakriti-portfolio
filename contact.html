@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Prakriti Bhandari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #3B6DFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+  }
+  nav a:hover, nav a.active { color: var(--accent); }
+
+  .content {
+    max-width: 600px;
+    margin: 80px auto 100px;
+    padding: 0 40px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .contact-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+  .contact-card:hover {
+    border-color: var(--accent);
+  }
+  .contact-card .label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .contact-card .value {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .contact-card .arrow {
+    color: var(--accent);
+    font-size: 18px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+  footer a { color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Prakriti Bhandari</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h1>Let's talk</h1>
+  <p class="intro">Whether it's a role, a freelance project, or just a question about something I've built, I'd love to hear from you.</p>
+
+  <div class="contact-list">
+    <a href="mailto:prakritibhandari555@gmail.com" class="contact-card">
+      <div>
+        <span class="label">Email</span>
+        <span class="value">prakritibhandari555@gmail.com</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/prakriti-bhandari-18pp/" target="_blank" class="contact-card">
+      <div>
+        <span class="label">LinkedIn</span>
+        <span class="value">prakriti-bhandari-18pp</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a href="https://github.com/Prakritibhandari07" target="_blank" class="contact-card">
+      <div>
+        <span class="label">GitHub</span>
+        <span class="value">Prakritibhandari07</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Prakriti Bhandari · <a href="https://github.com/Prakritibhandari07">GitHub</a> · <a href="https://www.linkedin.com/in/prakriti-bhandari-18pp/">LinkedIn</a>
+</footer>
+
+</body>
+</html>
