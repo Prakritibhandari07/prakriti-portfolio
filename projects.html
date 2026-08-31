@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Prakriti Bhandari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #3B6DFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+  }
+  nav a:hover, nav a.active { color: var(--accent); }
+
+  .page-header {
+    max-width: 700px;
+    margin: 60px auto 50px;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .page-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .page-header p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .projects {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .card .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    background: #EEF2FF;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  .card .links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 16px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+  footer a { color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Prakriti Bhandari</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h1>Projects</h1>
+  <p>Six deployed, testable machine learning applications — from classical ML to deep learning to full-stack web apps.</p>
+</section>
+
+<section class="projects">
+  <div class="project-grid">
+
+    <div class="card">
+      <span class="tag">Classification</span>
+      <h3>Credit Card Fraud Detection</h3>
+      <p>Solved a severe 0.17% class imbalance using undersampling and Logistic Regression, achieving 96% precision and 90% recall on holdout data. Deployed as a live app returning real-time fraud-probability scores.</p>
+      <div class="links">
+        <a href="https://detecting-credit-card-fraud-vgwrhrds5kvclfbghrt6gu.streamlit.app/" target="_blank">Live Demo →</a>
+        <a href="https://github.com/Prakritibhandari07" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Deep Learning</span>
+      <h3>MNIST Digit Classifier</h3>
+      <p>Built a Convolutional Neural Network (CNN) with TensorFlow/Keras to classify handwritten digits, achieving 99.00% test accuracy (test loss 0.0307). Deployed for real-time digit prediction.</p>
+      <div class="links">
+        <a href="https://mnistdigitclassification-b8z2k8m8gezfphdvbw9ycw.streamlit.app/" target="_blank">Live Demo →</a>
+        <a href="https://github.com/Prakritibhandari07" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">NLP</span>
+      <h3>Email/SMS Spam Classifier</h3>
+      <p>Built an NLP pipeline (tokenization, stopword removal, TF-IDF) to classify messages as spam or legitimate. Deployed with instant predictions and a live confidence score.</p>
+      <div class="links">
+        <a href="https://sms-spam-classifier-hz3uzddeyeamfbcgmktqup.streamlit.app/" target="_blank">Live Demo →</a>
+        <a href="https://github.com/Prakritibhandari07" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Full-Stack</span>
+      <h3>AI Resume Screening Tool</h3>
+      <p>Rebuilt a Streamlit ML demo as a full Django application, adding user authentication and a database that persists every prediction. Wrote a 7-test suite using Django's TestCase, catching and fixing a real template bug.</p>
+      <div class="links">
+        <a href="https://resume-screening-app-using-python-cbzasevgovm83jpro4s5fj.streamlit.app/" target="_blank">Live Demo →</a>
+        <a href="https://github.com/Prakritibhandari07" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Agentic AI</span>
+      <h3>AI Chatbot Workflow</h3>
+      <p>Designed a multi-step conversational agent workflow with memory using n8n, OpenAI, and Google Gemini, demonstrating agentic workflow orchestration beyond a single model call.</p>
+      <div class="links">
+        <a href="https://github.com/Prakritibhandari07" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Kaggle</span>
+      <h3>Spaceship Titanic — Kaggle Competition</h3>
+      <p>Built a binary classification pipeline to predict passenger outcomes. Engineered features from cabin and passenger-group data, and compared Random Forest against Gradient Boosting through systematic validation testing. Achieved 78.55% accuracy on the held-out test set.</p>
+      <div class="links">
+        <a href="https://www.kaggle.com/code/prakritibhandari19/notebook182c1aff04" target="_blank">Kaggle Notebook →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Prakriti Bhandari · <a href="https://github.com/Prakritibhandari07">GitHub</a> · <a href="https://www.linkedin.com/in/prakriti-bhandari-18pp/">LinkedIn</a>
+</footer>
+
+</body>
+</html>
